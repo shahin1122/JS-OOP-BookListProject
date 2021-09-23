@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css" integrity="sha512-5fsy+3xG8N/1PV5MIJz9ZsWpkltijBI48gBzQ/Z2eVATePGHOkMIn+xTDHIfTZFVb9GMpflF2wOWItqxAP2oLQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+
+    <style>
+        .success , .error{
+            color: aliceblue;
+            padding: 5px;
+            margin: 5px 0 15px 0;
+        }
+
+        .success{
+            background-color: rgb(46, 112, 85);
+            text-align: center;
+            letter-spacing: 3px;
+            box-shadow: 10px 10px 14px darkgrey;
+            border-radius: 5px;
+        }
+
+        .error{
+            background-color: crimson;
+            text-align: center;
+            letter-spacing: 3px;
+            box-shadow: 10px 10px 14px darkgrey;
+            border-radius: 5px;
+        }
+    </style>
+    <title>Booklist OOP Project</title>
+</head>
+<body>
+    <div class="container">
+        <h1 style="text-align: center">Add Book</h1>
+        <form action="" id="book-form">
+            <div>
+                <label for="">Title</label>
+                <input type="text" id="title" class="u-full-width">
+            </div>
+            <div>
+                <label for="">Author</label>
+                <input type="text" id="author" class="u-full-width">
+            </div>
+            <div>
+                <label for="">ISBN CODE</label>
+                <input type="text" id="isbn" class="u-full-width">
+            </div>
+            <div>
+                <input type="submit" value="Submit" class="u-full-width" value="Submit">
+                
+            </div>
+        </form>
+        <hr>
+        <table class="u-full-width">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th></th>
+                    
+                </tr>
+            </thead>
+            <tbody id="book-list">
+                
+            </tbody>
+        </table>
+    </div>
+
+    <script src="./appEs6.js"></script>
+</body>
+</html>
